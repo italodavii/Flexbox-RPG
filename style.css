@@ -7,7 +7,7 @@
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 }
-body{
+.main-index{
     background: #342c34;
 }
 nav{
@@ -19,6 +19,9 @@ nav{
     justify-content: space-between;
     padding: 0 50px;
     box-shadow: 1px 1px 5px black;
+}
+nav img{
+    width: 50px;
 }
 nav div{
     display: flex;
@@ -35,7 +38,7 @@ nav div a:hover{
 
 /*colors: ["#26ccff", "#a25afd", "#ff5e7e", "#88ff5a", "#fcff42", "#ffa62d", "#ff36ff"],*/
 /*-------LEFT MAIN-------*/
-main{
+.main{
     padding: 30px;
     color: #b8b0b1;
     width: 100vw;
@@ -125,4 +128,73 @@ main{
     right: 0;
     bottom: 0;
 }
+
+
+/*---------------------------- hero.html ----------------------------*/
+.main-hero{
+    background: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 20vw;
+}  
+.user-info h1{
+    font-size: 50px;
+    padding-top: 40px;
+}
+.user-info h3{
+    padding-bottom: 50px;
+    color: #f49c0c;
+}
+.user-info div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.user-info div p{
+    margin: 10px 0 30px 0;
+}
+.user-info label{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.user-info input{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: none;
+}
+.save-button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #f49c0c;
+    color: white;
+    font-weight: bold;
+}
+.save-button:hover{
+    background-color: #b4540c;
+}
+.sair{
+    color: white;
+    width: 100%;
+    margin-top:20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
 

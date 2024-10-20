@@ -1,72 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="script.js">
+    <title>Flexbox - RPG</title>
 </head>
 <body>
-    <nav>
-        <img src="#" alt="logo">
-        <div>
-            <a href="">Games</a>
-            <a href="">Hero</a>
+    <main class="main-index">
+        <nav>
+            <img src="logo.png" alt="logo">
+            <div>
+                <a href="games.html">Games</a>
+                <a href="hero.html" id="username">Hero</a>
+            </div>
+        </nav>
+
+        <div class="main">
+            <div class="left">
+                <h1>Nível 1</h1>
+                <span>Saúde dos heróis:</span>
+
+                <div class="herois">
+                    <div>
+                        <img src="person/knight.png">
+                        <span>100/100 <img src="heart.png"></span>
+                    </div>
+                    <div>
+                        <img src="person/mage.png">
+                        <span>100/100 <img src="heart.png"></span>
+                    </div>
+                    <div>
+                        <img src="person/rogue.png">
+                        <span>100/100 <img src="heart.png"></span>
+                    </div>
+                </div>
+
+                <div class="text">
+                        <span><img src="person/knight.png">"E este é o seu exército, Arthur? Uma imitação patética de guerreiros."</span>
+                        <span><img src="person/boss1.png">"Você pagará por essas palavras e pelo ouro roubado."</span>
+                        <span><img src="person/knight.png">"Ha ha, boa sorte."</span>             
+                </div>
+                
+
+                <p>Aqui está Plutus. Espero que você esteja pronto para essa luta! Para derrotá-lo, você precisa usar as propriedades certas. Tenho certeza que você os conhece. Vamos lutar!</p>
+
+                <div class="obj"><span>Objetivos:</span></div>
+                <div class="vs">
+                    <div><img src="person/knight.png"><span>vs.</span><img src="person/boss1.png"></div>
+                    <div><img src="person/mage.png"><span>vs.</span><img src="person/salamander.png"></div>
+                    <div><img src="person/rogue.png"><span>vs.</span><img src="person/salamnder2.png"></div> 
+                </div>
+                <hr>
+            </div>
+
+            <div class="right">
+                <div class="back-div">
+                    <img class="back" src="background.png" alt="background">
+                    <div class="person">
+                        <img src="person/knight-attack.gif">
+                        <img src="person/mage-attack.gif">
+                        <img src="person/rogue-attack.gif">
+                    </div>
+                    <div class="person_mon">
+                        <img src="person/salamnder2.gif">
+                        <img src="person/salamander.gif">
+                        <img src="person/boss1.gif">
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-    <main>
-        <div class="left">
-            <h1>Nível 1</h1>
-            <span>Saúde dos heróis:</span>
-
-            <div class="herois">
-                <div>
-                    <img src="person/knight.png">
-                    <span>100/100 <img src="heart.png"></span>
-                </div>
-                <div>
-                    <img src="person/mage.png">
-                    <span>100/100 <img src="heart.png"></span>
-                </div>
-                <div>
-                    <img src="person/rogue.png">
-                    <span>100/100 <img src="heart.png"></span>
-                </div>
-            </div>
-
-            <div class="text">
-                    <span><img src="person/knight.png">"E este é o seu exército, Arthur? Uma imitação patética de guerreiros."</span>
-                    <span><img src="person/boss1.png">"Você pagará por essas palavras e pelo ouro roubado."</span>
-                    <span><img src="person/knight.png">"Ha ha, boa sorte."</span>             
-            </div>
-            
-
-            <p>Aqui está Plutus. Espero que você esteja pronto para essa luta! Para derrotá-lo, você precisa usar as propriedades certas. Tenho certeza que você os conhece. Vamos lutar!</p>
-
-            <div class="obj"><span>Objetivos:</span></div>
-            <div class="vs">
-                <div><img src="person/knight.png"><span>vs.</span><img src="person/boss1.png"></div>
-                <div><img src="person/mage.png"><span>vs.</span><img src="person/salamander.png"></div>
-                <div><img src="person/rogue.png"><span>vs.</span><img src="person/salamnder2.png"></div> 
-            </div>
-            <hr>
-        </div>
-
-        <div class="right">
-            <div class="back-div">
-                <img class="back" src="background.png" alt="background">
-                <div class="person">
-                    <img src="person/knight-attack.gif">
-                    <img src="person/mage-attack.gif">
-                    <img src="person/rogue-attack.gif">
-                </div>
-                <div class="person_mon">
-                    <img src="person/salamnder2.gif">
-                    <img src="person/salamander.gif">
-                    <img src="person/boss1.gif">
-                </div>
-            </div>
-        </div>
-    </main>
+    </main> 
 </body>
 </html>
