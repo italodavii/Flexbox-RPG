@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+}
+body{
+    background: #342c34;
+}
+nav{
+    width: 100vw;
+    height: 70px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-shadow: 1px 1px 5px black;
+}
+nav div{
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+}
+nav div a{
+    text-decoration: none;
+    color: white;
+}
+nav div a:hover{
+    color: yellow;
+}
+
+/*colors: ["#26ccff", "#a25afd", "#ff5e7e", "#88ff5a", "#fcff42", "#ffa62d", "#ff36ff"],*/
+/*-------LEFT MAIN-------*/
+main{
+    padding: 30px;
+    color: #b8b0b1;
+    width: 100vw;
+    display: flex;
+}
+.left{
+    width: 50vw;
+    height: auto;
+}
+.left h1{
+    margin-bottom: 20px;
+}
+.herois{
+    display: flex;
+}
+.herois div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: rgb(227, 73, 73);
+}
+.herois span{
+    display: flex;
+    align-self: center;
+}
+.herois span img{
+    width: 18px;
+    margin-left: 5px;
+}
+.herois img, .text img{
+    width: 50px;
+}
+.text{
+    display: flex;
+    flex-direction: column; 
+}
+.text span{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.left p{
+    line-height: 24px;
+}
+.obj{
+    margin: 20px 0;
+}
+.vs{
+    margin-bottom: 10px;
+}
+.vs div{
+    display: flex;
+    align-items: center;
+}
+.vs img{
+    width: 80px;
+    margin: 0 10px;
+}
+
+
+
+
+/*-------RIFGHT MAIN-------*/
+.right{
+    width: 50vw;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 10px #e4c48c;
+    border-radius: 20px;
+}
+.back-div{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: relative; 
+    display: flex; 
+}
+.person{
+    position: absolute;
+    margin-left: 15px;
+}
+.person_mon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
