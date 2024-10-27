@@ -10,6 +10,8 @@
 }
 .main-index{
     background: #342c34;
+    height: 100vh;
+    width: 100vw;
 }
 nav{
     width: 100vw;
@@ -43,7 +45,7 @@ nav div a:hover{
     padding: 30px;
     color: #b8b0b1;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
 }
 .left{
