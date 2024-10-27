@@ -42,6 +42,7 @@ nav div a:hover{
     padding: 30px;
     color: #b8b0b1;
     width: 100vw;
+    heigth: 100vh;
     display: flex;
 }
 .left{
