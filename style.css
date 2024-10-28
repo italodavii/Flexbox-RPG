@@ -297,6 +297,9 @@ nav div a:hover {
 }
 
 @media (max-width: 480px) {
+    .person img, .person_mon img{
+        width: 70px;
+    }
     nav {
         padding: 5px;
     }
