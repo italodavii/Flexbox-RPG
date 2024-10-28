@@ -1,4 +1,5 @@
-*{
+/* Reseta margens e formatações */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,12 +9,15 @@
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
     overflow-x: hidden;
 }
-.main-index{
+
+.main-index {
     background: #342c34;
     height: 100vh;
     width: 100vw;
 }
-nav{
+
+/* Nav bar */
+nav {
     width: 100vw;
     height: 70px;
     background: black;
@@ -23,155 +27,180 @@ nav{
     padding: 0 50px;
     box-shadow: 1px 1px 5px black;
 }
-nav img{
+
+nav img {
     width: 50px;
 }
-nav div{
+
+nav div {
     display: flex;
     justify-content: space-between;
     width: 130px;
 }
-nav div a{
+
+nav div a {
     text-decoration: none;
     color: white;
 }
-nav div a:hover{
+
+nav div a:hover {
     color: yellow;
 }
 
-/*colors: ["#26ccff", "#a25afd", "#ff5e7e", "#88ff5a", "#fcff42", "#ffa62d", "#ff36ff"],*/
-/*-------LEFT MAIN-------*/
-.main{
+/* ------- LEFT MAIN ------- */
+.main {
     padding: 30px;
     color: #b8b0b1;
     width: 100vw;
     height: auto;
     display: flex;
+    flex-direction: row;
 }
-.left{
+
+.left {
     width: 50vw;
     height: auto;
 }
-.left h1{
+
+.left h1 {
     margin-bottom: 20px;
 }
-.herois{
+
+.herois {
     display: flex;
 }
-.herois div{
+
+.herois div {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     color: rgb(227, 73, 73);
 }
-.herois span{
+
+.herois span {
     display: flex;
     align-self: center;
 }
-.herois span img{
+
+.herois span img {
     width: 18px;
     margin-left: 5px;
 }
-.herois img, .text img{
+
+.herois img, .text img {
     width: 50px;
 }
-.text{
+
+.text {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
-.text span{
+
+.text span {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-.left p{
+
+.left p {
     line-height: 24px;
 }
-.obj{
+
+.obj {
     margin: 20px 0;
 }
-.vs{
+
+.vs {
     margin-bottom: 10px;
 }
-.vs div{
+
+.vs div {
     display: flex;
     align-items: center;
 }
-.vs img{
+
+.vs img {
     width: 80px;
     margin: 0 10px;
 }
 
-
-
-
-/*-------RIFGHT MAIN-------*/
-.right{
+/* ------- RIGHT MAIN ------- */
+.right {
     width: 50vw;
 }
-.back{
+
+.back {
     width: 100%;
     height: 100%;
     box-shadow: 0px 0px 10px #e4c48c;
     border-radius: 20px;
 }
-.back-div{
+
+.back-div {
     width: 500px;
     height: 500px;
     margin: auto;
-    position: relative; 
-    display: flex; 
+    position: relative;
+    display: flex;
 }
-.person{
+
+.person {
     position: absolute;
     margin-left: 15px;
 }
-.person_mon{
+
+.person_mon {
     position: absolute;
     right: 0;
     bottom: 0;
 }
 
-
 /*---------------------------- hero.html ----------------------------*/
-.main-hero{
+.main-hero {
     background: black;
     color: white;
     width: 100vw;
     height: 100vh;
 }
-.user-info{
+
+.user-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
     width: 20vw;
-}  
-.user-info h1{
+}
+
+.user-info h1 {
     font-size: 50px;
     padding-top: 40px;
 }
-.user-info h3{
+
+.user-info h3 {
     padding-bottom: 50px;
     color: #f49c0c;
 }
-.user-info div{
+
+.user-info div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
 }
-.user-info div p{
+
+.user-info div p {
     margin: 10px 0 30px 0;
 }
-.user-info label{
+
+.user-info label {
     display: flex;
     justify-content: flex-start;
     width: 100%;
 }
-.user-info input{
+
+.user-info input {
     width: 100%;
     height: 40px;
     padding: 0 10px;
@@ -180,7 +209,8 @@ nav div a:hover{
     border-radius: 10px;
     border: none;
 }
-.save-button{
+
+.save-button {
     width: 100%;
     height: 40px;
     border: none;
@@ -190,15 +220,114 @@ nav div a:hover{
     color: white;
     font-weight: bold;
 }
-.save-button:hover{
+
+.save-button:hover {
     background-color: #b4540c;
 }
-.sair{
+
+.sair {
     color: white;
     width: 100%;
-    margin-top:20px;
+    margin-top: 20px;
     display: flex;
     justify-content: flex-start;
 }
 
+.div-temporaria{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+/* ------ Responsividade ------ */
+@media (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .back-div {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav div {
+        width: auto;
+    }
+
+    nav div a{
+        margin: 3px 20px;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .herois img, .text img, .vs img {
+        width: 40px;
+    }
+
+    .back-div {
+        width: 90%;
+        height: 300px;
+    }
+
+    .user-info {
+        width: 80%;
+    }
+
+    .user-info h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 5px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .back-div {
+        width: 100%;
+        height: 250px;
+    }
+
+    .user-info h1 {
+        font-size: 30px;
+    }
+
+    .user-info {
+        width: 90%;
+    }
+
+    .herois span img {
+        width: 14px;
+    }
+
+    .save-button, .user-info input {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .vs img {
+        width: 50px;
+    }
+}
